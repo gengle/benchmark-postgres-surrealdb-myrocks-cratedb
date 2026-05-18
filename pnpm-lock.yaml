@@ -9,22 +9,22 @@ importers:
   .:
     dependencies:
       '@digitak/esrun':
-        specifier: ^3.2.25
+        specifier: ^3.2.26
         version: 3.2.26
       '@duckdb/node-api':
         specifier: 1.3.0-alpha.21
         version: 1.3.0-alpha.21
       '@faker-js/faker':
-        specifier: ^8.1.0
+        specifier: ^8.4.1
         version: 8.4.1
       '@types/better-sqlite3':
-        specifier: ^7.6.8
+        specifier: ^7.6.13
         version: 7.6.13
       better-sqlite3:
-        specifier: ^9.1.1
+        specifier: ^9.6.0
         version: 9.6.0
       cassandra-driver:
-        specifier: ^4.7.2
+        specifier: ^4.8.0
         version: 4.8.0
       leveldown:
         specifier: ^6.1.1
@@ -33,19 +33,19 @@ importers:
         specifier: ^5.1.1
         version: 5.1.1
       lmdb:
-        specifier: ^2.9.2
+        specifier: ^2.9.4
         version: 2.9.4
       mariadb:
-        specifier: ^3.2.1
+        specifier: ^3.4.2
         version: 3.4.2
       node-lmdb:
-        specifier: ^0.10.0
+        specifier: ^0.10.1
         version: 0.10.1
       pg:
-        specifier: ^8.11.3
+        specifier: ^8.16.0
         version: 8.16.0
       postgres:
-        specifier: ^3.3.5
+        specifier: ^3.4.7
         version: 3.4.7
       rocksdb:
         specifier: ^5.2.1
@@ -67,13 +67,13 @@ importers:
         specifier: ^5.1.5
         version: 5.1.5
       '@types/pg':
-        specifier: ^8.10.3
+        specifier: ^8.15.2
         version: 8.15.2
       '@types/rocksdb':
         specifier: ^3.0.5
         version: 3.0.5
       bun-types:
-        specifier: ^1.0.14
+        specifier: ^1.2.14
         version: 1.2.14
 
 packages:
@@ -840,6 +840,7 @@ packages:
   prebuild-install@7.1.3:
     resolution: {integrity: sha512-8Mf2cbV7x1cXPUILADGI3wuhfqWvtiLA1iclTDbFRZkgRQS0NqsPZphna9V+HyTEadheuPmjaJMsbzKQFOzLug==}
     engines: {node: '>=10'}
+    deprecated: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
     hasBin: true
 
   pump@3.0.2:
@@ -900,8 +901,8 @@ packages:
     resolution: {integrity: sha512-Lw7gds+u5966ng00/yOOkeW90VFj2tI5YNZ1cY7t9fyl9yEEcrFOkR5djqXwuJ1V3ORVORP5l+Hv2N6Sfgh5PQ==}
     deprecated: Please visit https://www.npmjs.com/package/surrealdb for the updated SurrealDB SDK.
 
-  tar-fs@2.1.3:
-    resolution: {integrity: sha512-090nwYJDmlhwFwEW3QQl+vaNnxsO2yVsd45eTKRBzSzu+hlb1w2K9inVq5b0ngXuLVqQ4ApvsUHHnu/zQNkWAg==}
+  tar-fs@2.1.4:
+    resolution: {integrity: sha512-mDAjwmZdh7LTT6pNleZ05Yt65HC3E+NiQzl672vQG38jIrehtJk/J3mNwIg+vShQPcLF/LV7CMnDW6vjj6sfYQ==}
 
   tar-stream@2.2.0:
     resolution: {integrity: sha512-ujeqbceABgwMZxEJnk2HDY2DlnUZ+9oEcb1KzTVfYHio0UE6dG71n60d8D2I4qNvleWrrXpmjpt7vZeF1LnMZQ==}
@@ -933,6 +934,7 @@ packages:
   unws@0.2.4:
     resolution: {integrity: sha512-/N1ajiqrSp0A/26/LBg7r10fOcPtGXCqJRJ61sijUFoGZMr6ESWGYn7i0cwr7fR7eEECY5HsitqtjGHDZLAu2w==}
     engines: {node: '>=16.14.0'}
+    deprecated: For Node.js v20.10.0 and later, the WebSocket global is available natively. This package is no longer maintained.
     peerDependencies:
       ws: '*'
 
@@ -1613,7 +1615,7 @@ snapshots:
       pump: 3.0.2
       rc: 1.2.8
       simple-get: 4.0.1
-      tar-fs: 2.1.3
+      tar-fs: 2.1.4
       tunnel-agent: 0.6.0
 
   pump@3.0.2:
@@ -1678,7 +1680,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  tar-fs@2.1.3:
+  tar-fs@2.1.4:
     dependencies:
       chownr: 1.1.4
       mkdirp-classic: 0.5.3
