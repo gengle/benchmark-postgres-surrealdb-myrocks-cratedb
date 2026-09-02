@@ -15,8 +15,8 @@ importers:
         specifier: 1.3.0-alpha.21
         version: 1.3.0-alpha.21
       '@faker-js/faker':
-        specifier: ^8.1.0
-        version: 8.4.1
+        specifier: ^10.5.0
+        version: 10.5.0
       '@types/better-sqlite3':
         specifier: ^7.6.8
         version: 7.6.13
@@ -399,9 +399,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@faker-js/faker@8.4.1':
-    resolution: {integrity: sha512-XQ3cU+Q8Uqmrbf2e0cIC/QN43sTBSC8KF12u29Mb47tWrt2hAgBXSgpZMj4Ao8Uk0iJcU99QsOCaIL8934obCg==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
+  '@faker-js/faker@10.5.0':
+    resolution: {integrity: sha512-bsxD8WLS5lIj7aaoCx1YJkktqYj5vlBUE6HWzu2Q51ksrGJ0H737ECCKlFU7Yf8Br45z9t99frBp/J7kzbMPAg==}
+    engines: {node: ^20.19.0 || ^22.13.0 || ^23.5.0 || >=24.0.0, npm: '>=10'}
 
   '@lmdb/lmdb-darwin-arm64@2.9.4':
     resolution: {integrity: sha512-38XmbES/wVcvMXdwcM5QzL0cSaZu3VwE7mCd0I89eliHQTMQblgWXsr2HQoP9v0JnH6jVt7+E/TkeGNLmp4wzA==}
@@ -840,6 +840,7 @@ packages:
   prebuild-install@7.1.3:
     resolution: {integrity: sha512-8Mf2cbV7x1cXPUILADGI3wuhfqWvtiLA1iclTDbFRZkgRQS0NqsPZphna9V+HyTEadheuPmjaJMsbzKQFOzLug==}
     engines: {node: '>=10'}
+    deprecated: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
     hasBin: true
 
   pump@3.0.2:
@@ -933,6 +934,7 @@ packages:
   unws@0.2.4:
     resolution: {integrity: sha512-/N1ajiqrSp0A/26/LBg7r10fOcPtGXCqJRJ61sijUFoGZMr6ESWGYn7i0cwr7fR7eEECY5HsitqtjGHDZLAu2w==}
     engines: {node: '>=16.14.0'}
+    deprecated: For Node.js v20.10.0 and later, the WebSocket global is available natively. This package is no longer maintained.
     peerDependencies:
       ws: '*'
 
@@ -1139,7 +1141,7 @@ snapshots:
   '@esbuild/win32-x64@0.25.5':
     optional: true
 
-  '@faker-js/faker@8.4.1': {}
+  '@faker-js/faker@10.5.0': {}
 
   '@lmdb/lmdb-darwin-arm64@2.9.4':
     optional: true
